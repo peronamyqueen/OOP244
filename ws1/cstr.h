@@ -1,11 +1,11 @@
-/* 
+/*
 Workshop 1
 Filename: cstr.cpp
 -----------------------------------------------------------
 Author: Issa Abishev
 Student number: 175980234
 Email: iabishev@myseneca.ca
-Subject: OOP244
+Subject: OOP244NAA
 -----------------------------------------------------------
 I have done all the coding by myself
 -----------------------------------------------------------
@@ -18,26 +18,26 @@ I have done all the coding by myself
 
 namespace seneca {
 
-   char* strcat(char* des, const char* src);
+char *strcat(char *des, const char *src);
 
-   char tolower(char ch);
-   char* tolower(char* des, const char* src);
-   char* tolower(char* str);
+char tolower(char ch);
+char *tolower(char *des, const char *src);
+char *tolower(char *str);
 
-   int strcmp(const char* s1, const char* s2);
-   int strcmp(const char* s1, const char* s2, size_t len);
+int strcmp(const char *s1, const char *s2);
+int strcmp(const char *s1, const char *s2, size_t len);
 
-   char* strcpy(char* des, const char* src);
-   char* strcpy(char* des, const char* src, size_t len);
-   char* strncpy(char* des, const char* src, size_t len);
+char *strcpy(char *des, const char *src);
+char *strcpy(char *des, const char *src, size_t len);
+char *strncpy(char *des, const char *src, size_t len);
 
-   size_t strlen(const char* str);
+size_t strlen(const char *str);
 
-   const char* strstr(const char* str, const char* toFind);
+const char *strstr(const char *str, const char *toFind);
 
-   bool isalpha(char ch);
-   bool isspace(char ch);
+bool isalpha(char ch);
+bool isspace(char ch);
 
-}
+} // namespace seneca
 
 #endif
