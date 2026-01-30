@@ -1,4 +1,4 @@
-/* 
+/*
 Workshop 2
 Filename: dma.cpp
 -----------------------------------------------------------
@@ -7,7 +7,8 @@ Student number: 175980234
 Email: iabishev@myseneca.ca
 Subject: OOP244
 -----------------------------------------------------------
-I have done all the coding by myself
+I have done all the coding by myself and only copied the code
+that my professor provided to complete my work
 -----------------------------------------------------------
 */
 
@@ -16,10 +17,10 @@ I have done all the coding by myself
 
 namespace seneca {
 
-Samples* CreateSamples(const char* title){
-    Samples* newSample = new Samples;
+Samples *CreateSamples(const char *title) {
+    Samples *newSample = new Samples;
 
-    newSample->m_title = new char[strlen(title)+1];
+    newSample->m_title = new char[strlen(title) + 1];
     strcpy(newSample->m_title, title);
 
     newSample->m_data = nullptr;
@@ -28,7 +29,7 @@ Samples* CreateSamples(const char* title){
     return newSample;
 }
 
-void add(Samples& S, const int data[], int size) {
+void add(Samples &S, const int data[], int size) {
     if (S.m_data == nullptr) {
         S.m_data = new int[size];
 
@@ -37,15 +38,14 @@ void add(Samples& S, const int data[], int size) {
         }
 
         S.m_size = size;
-    }
-    else {
+    } else {
         append(S.m_data, S.m_size, data, size);
         S.m_size += size;
     }
 }
 
-void append(int*& data, int size, const int appendedData[], int dataSize) {
-    int* temp = new int[size + dataSize];
+void append(int *&data, int size, const int appendedData[], int dataSize) {
+    int *temp = new int[size + dataSize];
 
     for (int i = 0; i < size; i++) {
         temp[i] = data[i];
@@ -60,7 +60,7 @@ void append(int*& data, int size, const int appendedData[], int dataSize) {
     data = temp;
 }
 
-void freemem(Samples*& s) {
+void freemem(Samples *&s) {
     if (s != nullptr) {
         delete[] s->m_title;
         delete[] s->m_data;
@@ -68,4 +68,4 @@ void freemem(Samples*& s) {
         s = nullptr;
     }
 }
-}
+} // namespace seneca
