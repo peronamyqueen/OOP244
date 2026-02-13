@@ -1,17 +1,14 @@
 /***********************************************************************
 // OOP244 Workshop 4 lab: Account Module
 //
+// Name: Issa Abishev
+// SID: 175980234
 // File	Account.cpp
 // Version 0.5
 // Date	2025/06/03
 // Partialy implemented by	Fardad Soleimanloo
 // to be completed by the students
 // You may modify any code in this file to suit your requirements.
-// Description
-//
-// Revision History
-// -----------------------------------------------------------
-// Name            Date            Reason
 ***********************************************************************/
 #include "Account.h"
 #include <iostream>

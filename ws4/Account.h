@@ -1,17 +1,13 @@
 /***********************************************************************
 // OOP244 Workshop 4 lab: Account Module
 //
+// Name: Issa Abishev
+// SID: 175980234
 // File	Account.h
 // Version 0.5
 // Date	2025/06/03
 // Partialy implemented by	Fardad Soleimanloo
 // to be completed by the students
-// Description
-//
-// Revision History
-// -----------------------------------------------------------
-// Name            Date            Reason
-//
 /////////////////////////////////////////////////////////////////
 ***********************************************************************/
 #ifndef SENECA_ACCOUNT_H_
